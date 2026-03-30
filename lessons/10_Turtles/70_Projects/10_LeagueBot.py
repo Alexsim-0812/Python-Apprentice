@@ -28,8 +28,13 @@ def set_turtle_image(turtle, image_name):
     screen.addshape(image_path)
     turtle.shape(image_path)
 
-set_turtle_image(t,"leaguebot_flag.gif")
+set_turtle_image(t,"leaguebot_bolt.gif")
 
+t.shapesize(2,2)
+
+for i in range(6):
+    t.forward(30)
+    t.left(360/6)
 
 
 
