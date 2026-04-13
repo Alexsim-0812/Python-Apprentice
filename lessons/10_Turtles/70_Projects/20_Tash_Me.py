@@ -10,4 +10,12 @@ Hint: See 08a_More Turtle Programs, section 'Change the Background Image' and
 'Change the Turtle Shape'
 """
 
-... # Your code here
+# Change the Background Image
+
+import turtle
+
+def Change_background(window, image_name):
+    screen = turtle.Screen
+        
+
+turtle.exitonclick()
