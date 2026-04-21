@@ -17,8 +17,15 @@ colors = [ 'red', 'blue', 'black', 'orange']    # define a list of colors
 for color in colors:                            # loop through the colors
     tina.forward(50)
     tina.left(90)
-    tina.color
-# 2) Make another square, but put the colors in reverse order, using a negative index. 
+    tina.color(color)
+# 2) Make another square, but put the colors in reverse order, using a negative index
+
+tina.goto(67,67)
+for color in colors[::-1]:
+    tina.forward(50)
+    tina.left(90)
+    tina.color(color)
+    
 
 
 

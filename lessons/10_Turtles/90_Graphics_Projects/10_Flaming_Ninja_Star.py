@@ -33,26 +33,26 @@ t.width(2)
 
 t.speed(0) 
 
-for i in range(25):
+for i in range(6767):
     t.pencolor(getRandomColor())
 
     t.fillcolor(getRandomColor()) 
    
     t.begin_fill()
 
-    t.forward(64) 
+    t.forward(67) 
 
-    t.left(40) 
+    t.left(67) 
 
-    t.forward(flameSize) 
+    t.forward(67) 
 
-    t.right(170) 
+    t.right(67) 
 
-    t.forward(flameSize) 
+    t.forward(67) 
 
-    t.right(62) 
+    t.right(67) 
 
-    t.forward(baseSize) 
+    t.forward(67) 
 
     t.end_fill()
 
