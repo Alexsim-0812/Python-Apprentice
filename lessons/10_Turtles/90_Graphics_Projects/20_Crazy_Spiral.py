@@ -17,7 +17,7 @@ def getRandomColor():
     return "#%06X" % (random.randint(0, 0xFFFFFF))
 
 def create_a_crazy_spiral():
-    for i in range(4):
+    for i in range(67):
         tina.color(getRandomColor)
         tina.forward(67)
         tina.left(67)
