@@ -6,8 +6,7 @@ Funny Words Dictionary
 This program provides a graphical user interface (GUI) for managing a dictionary
 of funny words and their definitions. Users can add new definitions, delete
 existing definitions, and view the list of definitions in a listbox. 
-
-The module uses the guizero library to create the GUI components and handle user
+/The module uses the guizero library to create the GUI components and handle user
 interactions.  It defines several functions for adding and deleting definitions,
 as well as checking if a definition is funny. The definitions are stored in a
 global dictionary called 'db'. To use the application, run the script and a
@@ -30,19 +29,17 @@ def add_definition(db, key, value):
     - db (dict): The database to add the definition to.
     - key (str): The key for the new definition.
     - value (str): The value for the new definition.
-
+    
     Returns:
     - None
 
     If there are already 5 items in the database, an error message is displayed and the new item is not added.
     """
-
-    # Check the limit
-
-    # Set the item in the database
-
-    pass
-
+    db [key] = value
+    
+    if len(db) == 5:
+        print("Error: Cannot be 6 or more Defnitions.")
+        
 
 def delete_definition(db, key):
     """

@@ -10,7 +10,7 @@ Review the ' Using Lists' section of the previous lesson if you need
 more help
 """
 
-import turtle 
+import turtle
 import random                          # Tell Python we want to work with the turtle
 turtle.setup(600,600,0,0)               # Set the size of the window
 
