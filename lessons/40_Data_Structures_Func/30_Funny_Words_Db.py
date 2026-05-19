@@ -37,9 +37,9 @@ def add_definition(db, key, value):
     """
     db [key] = value
     
-    if len(db) == 5:
-        print("Error: Cannot be 6 or more Defnitions.")
-        
+    if len(db) >= 5:
+        print("Error: cannot add more Defnitions than 5.")
+        del db[:5]
 
 def delete_definition(db, key):
     """
@@ -52,7 +52,10 @@ def delete_definition(db, key):
     Returns:
         None
     """
-
+    if db[key] == None:
+        print("There is nothing to delete.")
+    else:
+        del db[key]
     # Delete the item from db if it is present
 
     pass
