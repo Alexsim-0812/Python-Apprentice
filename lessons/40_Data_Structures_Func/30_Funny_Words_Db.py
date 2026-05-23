@@ -65,7 +65,7 @@ def is_funny(definition):
     """
     Check if the definition is funny, which means it contains one of the words:
 
-        'fun', 'funny', 'hilarious', 'amusing', 'pants', 'spleen'
+        
 
     Args:
         definition (str): The definition to check.
@@ -73,9 +73,11 @@ def is_funny(definition):
     Returns:
         bool: True if the definition contains any of the funny words, False otherwise.
     """
-    
-    # Return True if the definition contains any of the funny words, False otherwise
+        
+    funny_list = ['funny', 'amusing', 'fun', 'pants', 'iphone 1']
 
+    if definition.contains(funny_list):
+        return True
     return False
 
 def update_listbox(db):
@@ -94,6 +96,9 @@ def update_listbox(db):
         "Item 3: fake Definition 3"
     ]
 
+    
+    for key in db:
+        l.append(key + ":" + db[key])
     # Add each definition to a string
     # iterate over the dict's key-value pairs and turn them into
     # strings, then add the strings to the list with .append()
