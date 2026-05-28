@@ -13,10 +13,9 @@ def check_row(l):
         l: a 3 element iterable
         
     Returns:
-        The winner's token ( x or o ) if there is one, otherwise None
-        """
+        The winner's token ( x or o ) if there is one, otherwise None"""
+    
 
-    return None
 
 def check_win(board):
     """Check if a player has won on a board
@@ -26,6 +25,9 @@ def check_win(board):
     Returns:
         The winner's token ( x or o ) if there is one, otherwise None
     """
+    
+
+
 
     return None
 
